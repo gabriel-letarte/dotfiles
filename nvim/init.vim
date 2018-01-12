@@ -64,6 +64,13 @@ set nu
 
 " Convenience
 set nobackup noswapfile
+"
+" " Tab size
+nnoremap <silent> <Leader>= :exe "vertical resize +30"<CR>
+nnoremap <silent> <Leader>- :exe "vertical resize -30"<CR>
+
+" / Search
+set ic
 
 " text editing
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
