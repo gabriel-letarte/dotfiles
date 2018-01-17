@@ -31,6 +31,15 @@ Plug 'tpope/vim-commentary'
 " Git status in gutter
 Plug 'airblade/vim-gitgutter'
 
+" TESTING better language support?
+Plug 'sheerun/vim-polyglot'
+
+" one dark theme
+Plug 'joshdick/onedark.vim'
+
+" multi cursor
+Plug 'terryma/vim-multiple-cursors'
+
 call plug#end()
 
 " Use rg instead of ack
@@ -51,6 +60,10 @@ let g:ruby_indent_block_style = 'do'
 " =================================================
 " Configs
 " =================================================
+
+" Colors
+syntax on
+colorscheme onedark
 
 " Leader stuff
 let mapleader=","
