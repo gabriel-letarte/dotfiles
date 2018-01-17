@@ -33,6 +33,9 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
+" Use rg instead of ack
+let g:ackprg = 'rg --vimgrep'
+
 " NERDTree
 nnoremap <C-d> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
@@ -64,8 +67,11 @@ set nu
 
 " Convenience
 set nobackup noswapfile
-"
-" " Tab size
+
+" Splits
+set splitright
+set splitbelow
+
 nnoremap <silent> <Leader>= :exe "vertical resize +30"<CR>
 nnoremap <silent> <Leader>- :exe "vertical resize -30"<CR>
 
