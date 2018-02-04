@@ -84,6 +84,7 @@ set nobackup noswapfile
 " Splits
 set splitright
 set splitbelow
+set fillchars=""
 
 nnoremap <silent> <Leader>= :exe "vertical resize +30"<CR>
 nnoremap <silent> <Leader>- :exe "vertical resize -30"<CR>
@@ -98,6 +99,7 @@ set nowrap
 set formatoptions-=t " Auto-wrap text
 set formatoptions-=c " Auto-wrap comments
 set formatoptions-=l " Auto-wrap in insert mode
+set scrolloff=2 " 2 line of padding when scrolling
 
 " Remap
 
