@@ -40,6 +40,15 @@ Plug 'joshdick/onedark.vim'
 " multi cursor
 Plug 'terryma/vim-multiple-cursors'
 
+" Gstatus, Gbrowse
+Plug 'tpope/vim-fugitive'
+
+" Enables Gbrowse to open Github
+Plug 'tpope/vim-rhubarb'
+
+" Fast switching between open buffers
+Plug 'jeetsukumaran/vim-buffergator'
+
 call plug#end()
 
 " Use rg instead of ack
