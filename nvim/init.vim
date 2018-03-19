@@ -56,7 +56,9 @@ let g:ackprg = 'rg --vimgrep'
 
 " NERDTree
 nnoremap <C-d> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+" Changed to allow <C-f> to page down
+" nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-r> :NERDTreeFind<CR>
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
@@ -82,6 +84,15 @@ nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
 " Copy current file path
 " nnoremap <silent> <leader>y :let @+=expand("%")<CR>
 nnoremap <leader>y :let @+=expand("%")<CR>
+
+" copy current file path and line number
+nnoremap <leader>cfn :let @+=expand("%").":".line(".")<CR>
+
+" Preview current file in Github
+nnoremap <leader>gh :Gbrowse<CR>
+
+" Git blame current file
+nnoremap <leader>gb :Gblame<CR>
 
 " Relative line number hybrid mode
 set rnu
