@@ -98,6 +98,12 @@ nnoremap <leader>gb :Gblame<CR>
 set rnu
 set nu
 
+" Folding
+set foldenable
+set foldlevelstart=99
+set foldmethod=indent
+set foldopen=block,insert,jump,mark,percent,quickfix,search,tag,undo
+
 " Convenience
 set nobackup noswapfile
 
